@@ -1,0 +1,35 @@
+################################################
+#
+# Sharepoint Powermail Settings
+#
+# (c) 2013 Julian Kleinhans <julian.kleinhans@aijko.de>, aijko GmbH
+# All rights reserved
+#
+
+
+	plugin.tx_powermail {
+
+		settings {
+
+		}
+	}
+
+
+	config.tx_extbase {
+
+		objects {
+			Tx_Powermail_Domain_Model_Fields {
+				className = Aijko\SharepointPowermail\Domain\Model\Fields
+			}
+		}
+
+		persistence {
+			classes {
+				Aijko\SharepointPowermail\Domain\Model\Fields {
+					mapping {
+						tableName = tx_powermail_domain_model_fields
+					}
+				}
+			}
+		}
+	}

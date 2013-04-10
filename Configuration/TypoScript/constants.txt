@@ -1,0 +1,8 @@
+plugin.tx_powermail {
+
+	view {
+		# cat=powermail_main/file; type=string; label= Path to template partials (FE)
+		partialRootPath = EXT:sharepoint_powermail/Resources/Private/Partials/
+	}
+
+}
